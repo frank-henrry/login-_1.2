@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+  }
+  
+  header img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  h2, h3 {
+    margin: 5px 0;
+  }
+  
+  
+  .toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    left: 10px; /* Ajusta la distancia desde la izquierda */
+    z-index: 2; /* Asegura que esté por encima del contenido principal */
+    border-radius: 50%;
+  }
+  
+  .toggle-button img {
+    border-radius: 50%;
+    width: 30px; /* Ajusta el tamaño del icono dentro del botón */
+  }
+  
+  .sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .user-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  nav a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .header-icons {
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 10px; /* Ajusta la distancia desde la parte superior según sea necesario */
+    right: 80px; /* Ajusta la distancia desde la derecha según sea necesario */
+  }
+  
+  .header-icons a {
+    margin-left: 30px;
+  }
+  
+  
+  .header-icons i {
+    font-size: 30px; /* Ajusta el tamaño de los iconos según sea necesario */
+    cursor: pointer;
+  }
+  
+  .toggle-button {
+    top: 10px;
+    left: 10px;
+  }
+
+  /* Agrega estas reglas a tu archivo style.css */
+
+  .top-bar {
+    background-color: #13158f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    position: fixed; /* Hace que la barra sea fija en la parte superior */
+    width: 100%; /* Ocupa el ancho completo */
+    z-index: 1; /* Asegura que esté por encima del contenido */
+  }
+
+.top-bar .toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+.container {
+  margin-top: 80px; /* Ajusta el espacio entre la barra superior y el contenido */
+  margin-left: auto; /* Centra el contenido horizontalmente */
+  margin-right: auto;
+  margin-bottom: 40px; /* Centra el contenido horizontalmente */
+  max-width: 600px;
+}
+body {
+  background-image: url('img.jpg'); /* Cambia 'nombre-de-tu-imagen.jpg' por el nombre de tu imagen y su extensión. */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

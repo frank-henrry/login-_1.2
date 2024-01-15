@@ -17,8 +17,10 @@ facebookButton.addEventListener('click', async e => {
     // Cierra el nodal
     const modal = bootstrap.Modal.getInstance(facebookButton.closest('.modal'));
     modal.hide();
-
+    // redirige hacia dashboard.html
+    window.location.href = "./dashboard.html";
     showMessage("Welcome " + credentials.user.email);
+
   } catch (error) {
     console.log(error);
   }

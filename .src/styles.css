@@ -196,3 +196,10 @@ display: none;
     background-position: center;
 }
 
+.container {
+  margin-top: 80px; /* Ajusta el espacio entre la barra superior y el contenido */
+  margin-left: auto; /* Centra el contenido horizontalmente */
+  margin-right: auto;
+  margin-bottom: 40px; /* Centra el contenido horizontalmente */
+  max-width: 600px;
+}

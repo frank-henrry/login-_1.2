@@ -20,10 +20,11 @@ signUpForm.addEventListener("submit", async (e) => {//obtencion de valores en (s
 
     
     signUpForm.reset();
-
+    //para redirigir haia dashboar.html
+    window.location.href = "./dashboard.html";
     
     showMessage("Welcome" + userCredentials.user.email);
-
+    
   } catch (error) {
     if (error.code === 'auth/email-already-in-use') {
       showMessage("Email already in use", "error")

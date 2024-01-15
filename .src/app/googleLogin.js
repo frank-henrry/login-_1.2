@@ -16,7 +16,8 @@ googleButton.addEventListener("click", async (e) => {
     // Close the login modal
     const modalInstance = bootstrap.Modal.getInstance(googleButton.closest('.modal'));
     modalInstance.hide();
-
+    // redirige hacia dashboard.html
+    window.location.href = "./dashboard.html";
     // show welcome message
     showMessage("Welcome " + credentials.user.displayName);
   } catch (error) {

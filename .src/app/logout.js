@@ -8,6 +8,7 @@ logout.addEventListener("click", async (e) => {
   try {
     await signOut(auth)
     console.log("cerraste session");
+    window.location.href = 'index1.html';
   } catch (error) {
     console.log(error)
   }

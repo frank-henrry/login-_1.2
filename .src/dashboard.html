@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advanced Side Menu</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>  
+<div class="top-bar">
+    <button class="toggle-button" onclick="toggleSidebar()">
+        <i class='bx bx-menu' style='font-size: 40px;'></i>
+    </button>
+    <div class="header-icons">
+        <a href="#" class="message-link">
+            <i class='bx bx-envelope' style='font-size: 30px;'></i>
+        </a>
+        <a href="#" class="contact-link">
+            <span>
+                inicio
+            </span>
+        </a>
+        <a href="#">
+            <i class='bx bx-bell' style='font-size: 30px;'></i>
+        </a>
+        
+    </div>
+</div>
+    <div class="container">
+        <div class="sidebar">
+            <br>
+            <i class='bx bx-user' style='font-size: 40px;'></i>
+            <div class="user-info">
+                <h3>USUARIO</h3>
+            </div>
+            <nav>
+                <a href="#" class="nav-link">
+                    <span class="item-icon">
+                        <i class='bx bxs-home'></i>
+                    </span>
+                    <span class="item-txt">
+                        inicio
+                    </span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="item-icon">
+                        <i class='bx bxs-info-circle'></i>
+                    </span>
+                    <span class="item-txt">
+                        acerca de
+                    </span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="item-icon">
+                        <i class='bx bx-task'></i>
+                    </span>
+                    <span class="item-txt">
+                        Servicios
+                    </span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="item-icon">
+                        <i class='bx bxs-contact'></i>
+                    </span>
+                    <span class="item-txt">
+                        Contacto
+                    </span>
+                </a>
+                <a href="#" class="nav-link">
+                    <samp id="logout" class="item-txt">
+                        Cerrar sesión
+                    </samp>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <ul class="list-group posts">   
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./app/postList.js" type="module"></script>
+    <script src="./app/logout.js" type="module"></script>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

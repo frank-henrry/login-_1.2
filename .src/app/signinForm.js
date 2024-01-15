@@ -2,7 +2,6 @@ import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/1
 import { auth } from "./firebase.js";
 import { showMessage } from "./showMessage.js";
 
-
 const signInForm = document.querySelector("#login-form");//abre el modal para inicio de session
 
 signInForm.addEventListener("submit", async (e) => {//envia los datos ingresados
@@ -20,10 +19,11 @@ signInForm.addEventListener("submit", async (e) => {//envia los datos ingresados
     modal.hide();
 
     signInForm.reset();
-   
+    // redirige hacia dashboard.html
+    window.location.href = "./dashboard.html";
     showMessage("Welcome  " + userCredentials.user.email);
     
-    //window.location.href = "/dashboard.html";
+
   } catch (error) {
     if (error.code === 'auth/wrong-password') {
       showMessage("Wrong password", "error")
