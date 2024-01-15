@@ -105,7 +105,6 @@ body {
     left: 10px;
   }
 
-  /* Agrega estas reglas a tu archivo style.css */
 
   .top-bar {
     background-color: #13158f;
@@ -120,9 +119,20 @@ body {
   }
 
 .top-bar .toggle-button {
+  color: #fff;
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.top-bar .header-icons .message-link{
+  color: #fff;
+}
+.top-bar .contact-link{
+  color: #fff;
+}
+.top-bar .bx-bell{
+  color: #fff;
 }
 
 .header-icons {
